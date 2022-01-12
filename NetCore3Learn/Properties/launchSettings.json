@@ -1,0 +1,29 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false, // 啟動 Windows 身分驗證
+    "anonymousAuthentication": true, // 啟動匿名驗證
+    "iisExpress": {
+      "applicationUrl": "http://localhost:26811", // 應用程式啟動的 URL 路徑
+      "sslPort": 44339 // 啟動 SSL 的連接埠
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress", // 執行應用程式的模式
+      "launchBrowser": true, // 是否啟動瀏覽器
+      "environmentVariables": { // 設定環境變數
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+      }
+    },
+    "NetCore3Learn": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<NetCore3Learn.Models.BooksViewModel>
+@{
+}
+<h1>Books Item TEST</h1>
+@foreach (var item in Model)
+{
+    <div class="card">
+        <div class="row no-gutters container">
+            <div class="col-md-4">
+                <img src="@item.Picture" class="rounded mx-auto d-block" width="200" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><strong>@item.Name</strong></h5>
+                    <h6 class="card-title text-primary">作者:@item.Author</h6>
+                    <p class="card-text">@Html.Raw(@item.Introduction)</p>
+                    @*<a asp-action="Edit" asp-route-name="@item.Name">Edit</a>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+}
